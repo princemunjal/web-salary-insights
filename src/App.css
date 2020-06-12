@@ -1,3 +1,10 @@
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .form {
+    width: auto !important;
+  }
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -6,21 +13,22 @@
 
 .h1 {
   align-self: center;
-  margin-bottom: 1.2em;
+  margin-bottom: 1em;
   color: #000080;
   text-shadow: 1px 2px #ccc;
 }
 
 .form {
   background-color: #f9f9f9;
-  border-radius: 10px; 
+  border-radius: 10px;
+  padding: 10px;
   width: 50%;
 }
 
 .obj_input {
   display: flex;
   flex-direction: column;
-  padding: 12px;
+  padding: 8px;
 }
 
 .label {
@@ -44,7 +52,7 @@
 .button {
   background-color: #e6005c !important;
   font-weight: 800 !important;
-  width: 25% !important;
+  width: 130px !important;
   align-self: right;
 }
 
@@ -52,4 +60,25 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.output_box{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.output {
+  color: #e6005c !important;
+  font-weight: 800 !important;
+  margin:0;
+  text-shadow: 1px 1px #ccc;
+  margin-top: 2px;
+  
+}
+
+.error {
+  color: red !important;
+  font-weight: 600 !important;
+  margin:0;
 }
