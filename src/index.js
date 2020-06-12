@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import axios from 'axios';
 
-axios.defaults.baseURL="http://api-salary-insights.eba-dku4qkrw.us-east-1.elasticbeanstalk.com/";
+axios.defaults.baseURL="https://api-salary-insights.eba-dku4qkrw.us-east-1.elasticbeanstalk.com/";
 
 ReactDOM.render(
    <App />,
